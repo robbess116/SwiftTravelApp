@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DROIDKUFI-REGULAR.TTF">
+            <string>DroidArabicKufi</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wfu-yH-vwX" customClass="DiscoverMenuView" customModule="Aqsar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjZ-hV-22A">
+                    <rect key="frame" x="268" y="30" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="A4l-S0-kL2"/>
+                        <constraint firstAttribute="width" secondItem="AjZ-hV-22A" secondAttribute="height" multiplier="1:1" id="vZS-Ke-ROE"/>
+                    </constraints>
+                    <state key="normal" image="cross-1"/>
+                    <connections>
+                        <action selector="closeTapped:" destination="wfu-yH-vwX" eventType="touchUpInside" id="5my-vg-ZKK"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اكتشف" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOC-9g-wVn">
+                    <rect key="frame" x="12" y="30" width="248" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="oCZ-MZ-4RU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="15"/>
+                    <color key="textColor" red="0.019607843140000001" green="0.18823529410000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dfe-LL-i0U">
+                    <rect key="frame" x="0.0" y="80" width="300" height="520"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="wfu-yH-vwX" id="Zlx-tU-Bsf"/>
+                        <outlet property="delegate" destination="wfu-yH-vwX" id="I27-zH-ne7"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AjZ-hV-22A" firstAttribute="top" secondItem="wfu-yH-vwX" secondAttribute="top" constant="30" id="3X7-q3-G7g"/>
+                <constraint firstItem="dfe-LL-i0U" firstAttribute="leading" secondItem="wfu-yH-vwX" secondAttribute="leading" id="A7I-hs-flw"/>
+                <constraint firstItem="QOC-9g-wVn" firstAttribute="leading" secondItem="wfu-yH-vwX" secondAttribute="leading" constant="12" id="F3X-RL-ATP"/>
+                <constraint firstAttribute="bottom" secondItem="dfe-LL-i0U" secondAttribute="bottom" id="I6c-YN-JfK"/>
+                <constraint firstItem="AjZ-hV-22A" firstAttribute="leading" secondItem="QOC-9g-wVn" secondAttribute="trailing" constant="8" id="T3H-xj-ux3"/>
+                <constraint firstItem="dfe-LL-i0U" firstAttribute="top" secondItem="AjZ-hV-22A" secondAttribute="bottom" constant="30" id="WRb-z2-bm6"/>
+                <constraint firstAttribute="trailing" secondItem="AjZ-hV-22A" secondAttribute="trailing" constant="12" id="tlV-bc-AEo"/>
+                <constraint firstItem="QOC-9g-wVn" firstAttribute="top" secondItem="wfu-yH-vwX" secondAttribute="top" constant="30" id="wyL-DN-Tvb"/>
+                <constraint firstAttribute="trailing" secondItem="dfe-LL-i0U" secondAttribute="trailing" id="yCr-ZL-Ybk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnClose" destination="AjZ-hV-22A" id="EQS-B9-Bbw"/>
+                <outlet property="tableView" destination="dfe-LL-i0U" id="FuC-kf-XiN"/>
+            </connections>
+            <point key="canvasLocation" x="367" y="-183"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cross-1" width="26" height="26"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DROIDKUFI-REGULAR.TTF">
+            <string>DroidArabicKufi</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscoverMenuTableViewCell" rowHeight="44" id="7U8-9Q-voN" customClass="DiscoverMenuTableViewCell" customModule="Aqsar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7U8-9Q-voN" id="gFw-Gh-cxS">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r7L-8l-3SM">
+                        <rect key="frame" x="264" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="SYH-1o-eIe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم الفرع" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9J-Fb-H6Z">
+                        <rect key="frame" x="16" y="12" width="268" height="20"/>
+                        <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0EV-CA-Xv4">
+                        <rect key="frame" x="16" y="42" width="268" height="1"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.41568627450000001" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="r7L-8l-3SM" firstAttribute="bottom" secondItem="I9J-Fb-H6Z" secondAttribute="bottom" id="7mt-Ob-TZU"/>
+                    <constraint firstItem="0EV-CA-Xv4" firstAttribute="trailing" secondItem="I9J-Fb-H6Z" secondAttribute="trailing" id="Cqr-iD-Bui"/>
+                    <constraint firstItem="r7L-8l-3SM" firstAttribute="top" secondItem="I9J-Fb-H6Z" secondAttribute="top" id="HHu-j9-nma"/>
+                    <constraint firstItem="0EV-CA-Xv4" firstAttribute="leading" secondItem="I9J-Fb-H6Z" secondAttribute="leading" id="Lok-lZ-DW7"/>
+                    <constraint firstItem="I9J-Fb-H6Z" firstAttribute="top" secondItem="gFw-Gh-cxS" secondAttribute="topMargin" constant="4" id="Ly1-h8-ctw"/>
+                    <constraint firstItem="0EV-CA-Xv4" firstAttribute="top" secondItem="I9J-Fb-H6Z" secondAttribute="bottom" constant="10" id="U4u-nD-Dop"/>
+                    <constraint firstAttribute="bottom" secondItem="0EV-CA-Xv4" secondAttribute="bottom" id="Viz-EQ-SeL"/>
+                    <constraint firstItem="0EV-CA-Xv4" firstAttribute="top" secondItem="gFw-Gh-cxS" secondAttribute="top" constant="42" id="ZjB-ra-sS9"/>
+                    <constraint firstItem="0EV-CA-Xv4" firstAttribute="trailing" secondItem="r7L-8l-3SM" secondAttribute="trailing" id="cuo-Cm-KsW"/>
+                    <constraint firstItem="I9J-Fb-H6Z" firstAttribute="leading" secondItem="gFw-Gh-cxS" secondAttribute="leadingMargin" constant="8" id="jNT-Kq-cJl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="I9J-Fb-H6Z" secondAttribute="trailing" constant="8" id="wU5-sC-ggR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="imgIcon" destination="r7L-8l-3SM" id="eZp-lV-jiy"/>
+                <outlet property="lblTitle" destination="I9J-Fb-H6Z" id="dDU-Kt-TNt"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

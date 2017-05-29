@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DROIDKUFI-REGULAR.TTF">
+            <string>DroidArabicKufi</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AudioPlayerCell" rowHeight="60" id="sVW-N1-K0b" customClass="AudioPlayerCell" customModule="Aqsar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sVW-N1-K0b" id="H9I-Qp-uAm">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2X-w4-Src">
+                        <rect key="frame" x="8" y="9" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="G5x-oe-d0P"/>
+                            <constraint firstAttribute="width" constant="40" id="rPE-F1-oG7"/>
+                        </constraints>
+                        <state key="normal" image="Groupuu"/>
+                        <connections>
+                            <action selector="playPauseTapped:" destination="sVW-N1-K0b" eventType="touchUpInside" id="VgU-3F-lqo"/>
+                        </connections>
+                    </button>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XzP-HS-Wro">
+                        <rect key="frame" x="56" y="31" width="180" height="2"/>
+                        <color key="tintColor" red="0.33725490200000002" green="0.76078431369999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1g-bk-JrW">
+                        <rect key="frame" x="56" y="8" width="180" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="x7w-O0-bBp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="12"/>
+                        <color key="textColor" red="0.33725490200000002" green="0.76078431369999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJg-IH-SmS">
+                        <rect key="frame" x="56" y="36" width="180" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="9a2-xi-CAr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kL-5L-RSr">
+                        <rect key="frame" x="360" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="bEy-pf-bpQ"/>
+                        </constraints>
+                        <state key="normal" image="Shape_151_copy_2"/>
+                        <connections>
+                            <action selector="closeTapped:" destination="sVW-N1-K0b" eventType="touchUpInside" id="nZu-4O-B4n"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbm-7k-OVi">
+                        <rect key="frame" x="308" y="8" width="44" height="44"/>
+                        <state key="normal" image="Shape_7"/>
+                        <connections>
+                            <action selector="currentPageTapped:" destination="sVW-N1-K0b" eventType="touchUpInside" id="rHZ-h2-u4j"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2j2-Eb-8rH">
+                        <rect key="frame" x="256" y="8" width="44" height="44"/>
+                        <state key="normal" image="list_copy"/>
+                        <connections>
+                            <action selector="audioListTapped:" destination="sVW-N1-K0b" eventType="touchUpInside" id="XBo-kz-oYt"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2j2-Eb-8rH" firstAttribute="height" secondItem="Kbm-7k-OVi" secondAttribute="height" id="2sq-Z0-6HU"/>
+                    <constraint firstItem="Kbm-7k-OVi" firstAttribute="leading" secondItem="2j2-Eb-8rH" secondAttribute="trailing" constant="8" id="4Cj-Cx-NBl"/>
+                    <constraint firstItem="XzP-HS-Wro" firstAttribute="centerY" secondItem="g2X-w4-Src" secondAttribute="centerY" constant="3" id="75n-Px-OvG"/>
+                    <constraint firstItem="2j2-Eb-8rH" firstAttribute="centerY" secondItem="Kbm-7k-OVi" secondAttribute="centerY" id="EGA-Cg-btW"/>
+                    <constraint firstItem="2j2-Eb-8rH" firstAttribute="leading" secondItem="gJg-IH-SmS" secondAttribute="trailing" constant="20" id="F9A-7a-nEw"/>
+                    <constraint firstAttribute="topMargin" secondItem="4kL-5L-RSr" secondAttribute="top" id="LUa-N0-gCp"/>
+                    <constraint firstItem="Kbm-7k-OVi" firstAttribute="height" secondItem="4kL-5L-RSr" secondAttribute="height" id="Lee-9m-74l"/>
+                    <constraint firstItem="g2X-w4-Src" firstAttribute="centerY" secondItem="H9I-Qp-uAm" secondAttribute="centerY" constant="-0.5" id="QGA-Ad-CNN"/>
+                    <constraint firstItem="Y1g-bk-JrW" firstAttribute="leading" secondItem="g2X-w4-Src" secondAttribute="trailing" constant="8" id="RHO-IF-VzA"/>
+                    <constraint firstItem="gJg-IH-SmS" firstAttribute="leading" secondItem="g2X-w4-Src" secondAttribute="trailing" constant="8" id="T1V-hg-bgB"/>
+                    <constraint firstItem="2j2-Eb-8rH" firstAttribute="leading" secondItem="Y1g-bk-JrW" secondAttribute="trailing" constant="20" id="TOj-SJ-N6Z"/>
+                    <constraint firstItem="XzP-HS-Wro" firstAttribute="leading" secondItem="g2X-w4-Src" secondAttribute="trailing" constant="8" id="TTk-6A-OCx"/>
+                    <constraint firstItem="2j2-Eb-8rH" firstAttribute="leading" secondItem="XzP-HS-Wro" secondAttribute="trailing" constant="20" id="XB8-0j-24g"/>
+                    <constraint firstItem="4kL-5L-RSr" firstAttribute="leading" secondItem="Kbm-7k-OVi" secondAttribute="trailing" constant="8" id="aRl-1P-AXa"/>
+                    <constraint firstItem="2j2-Eb-8rH" firstAttribute="width" secondItem="Kbm-7k-OVi" secondAttribute="width" id="dqs-C8-dKc"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="g2X-w4-Src" secondAttribute="leading" id="fUa-Fl-4pe"/>
+                    <constraint firstItem="Kbm-7k-OVi" firstAttribute="centerY" secondItem="4kL-5L-RSr" secondAttribute="centerY" id="hnp-al-zbG"/>
+                    <constraint firstAttribute="topMargin" secondItem="Y1g-bk-JrW" secondAttribute="top" id="kHk-eU-x3Q"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4kL-5L-RSr" secondAttribute="bottom" constant="-1" id="oCa-dZ-LV9"/>
+                    <constraint firstItem="Kbm-7k-OVi" firstAttribute="width" secondItem="4kL-5L-RSr" secondAttribute="width" id="r6a-Nm-zv2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gJg-IH-SmS" secondAttribute="bottom" constant="-1" id="yeE-DP-AKs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4kL-5L-RSr" secondAttribute="trailing" id="znT-AY-DBe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.090196078430000007" green="0.08235294118" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="btnAudiosList" destination="2j2-Eb-8rH" id="yNV-7Q-JTI"/>
+                <outlet property="btnClose" destination="4kL-5L-RSr" id="HOa-0r-Kxh"/>
+                <outlet property="btnCurrentPage" destination="Kbm-7k-OVi" id="tpG-tE-riD"/>
+                <outlet property="btnPlayPause" destination="g2X-w4-Src" id="D9k-OE-a0p"/>
+                <outlet property="lblAuthorAndName" destination="gJg-IH-SmS" id="xpC-aW-ejj"/>
+                <outlet property="lblPartName" destination="Y1g-bk-JrW" id="sJz-cq-qaB"/>
+                <outlet property="progressView" destination="XzP-HS-Wro" id="e3P-37-cy2"/>
+            </connections>
+            <point key="canvasLocation" x="128" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Groupuu" width="86" height="86"/>
+        <image name="Shape_151_copy_2" width="22" height="21"/>
+        <image name="Shape_7" width="27" height="22"/>
+        <image name="list_copy" width="26" height="20"/>
+    </resources>
+</document>

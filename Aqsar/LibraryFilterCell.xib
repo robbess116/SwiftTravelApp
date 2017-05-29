@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DROIDKUFI-REGULAR.TTF">
+            <string>DroidArabicKufi</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LibraryFilterCell" id="f92-Yh-Hoe" customClass="LibraryFilterCell" customModule="Aqsar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f92-Yh-Hoe" id="wfS-Yq-2GW">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العنوان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6d-pV-Ix1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGz-98-U9x">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="iKl-Md-OxH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M6d-pV-Ix1" firstAttribute="top" secondItem="wfS-Yq-2GW" secondAttribute="top" id="FL9-gA-68H"/>
+                    <constraint firstItem="IGz-98-U9x" firstAttribute="leading" secondItem="wfS-Yq-2GW" secondAttribute="leading" id="J8t-R2-oI8"/>
+                    <constraint firstItem="M6d-pV-Ix1" firstAttribute="leading" secondItem="wfS-Yq-2GW" secondAttribute="leading" id="LyI-RY-jPR"/>
+                    <constraint firstAttribute="trailing" secondItem="IGz-98-U9x" secondAttribute="trailing" id="XtG-Nm-EJN"/>
+                    <constraint firstAttribute="trailing" secondItem="M6d-pV-Ix1" secondAttribute="trailing" id="iAn-9q-Puv"/>
+                    <constraint firstAttribute="bottom" secondItem="IGz-98-U9x" secondAttribute="bottom" id="qgl-MF-qHa"/>
+                    <constraint firstAttribute="bottom" secondItem="M6d-pV-Ix1" secondAttribute="bottom" id="tM0-HS-WLI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblTitle" destination="M6d-pV-Ix1" id="Jdk-6r-ugJ"/>
+            </connections>
+            <point key="canvasLocation" x="149" y="145"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DROIDKUFI-BOLD.TTF">
+            <string>DroidArabicKufi-Bold</string>
+        </array>
+        <array key="DROIDKUFI-REGULAR.TTF">
+            <string>DroidArabicKufi</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyAccountQuotationsCell" rowHeight="150" id="8a8-kI-zS0" customClass="MyAccountQuotationsCell" customModule="Aqsar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8a8-kI-zS0" id="lrQ-3u-rTs">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lF-DR-WX5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="open" translatesAutoresizingMaskIntoConstraints="NO" id="Bc6-Hz-ECg">
+                                <rect key="frame" x="231" y="20" width="80" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2x7-XC-gyh"/>
+                                    <constraint firstAttribute="height" constant="111" id="tHl-cc-If3"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yln-oh-UOZ">
+                                <rect key="frame" x="172" y="114" width="5" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سهيل العيساوي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="wpA-29-GVn">
+                                <rect key="frame" x="8" y="64" width="215" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="buk-ee-EDl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="13"/>
+                                <color key="textColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VT-WC-hrQ">
+                                <rect key="frame" x="210" y="110" width="13" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="d7S-5d-NLa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text_file" translatesAutoresizingMaskIntoConstraints="NO" id="KAg-BW-xtG">
+                                <rect key="frame" x="184" y="110" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5bn-ws-pI2"/>
+                                    <constraint firstAttribute="width" constant="21" id="aOO-eb-PgL"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="21" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4x1-96-2u4">
+                                <rect key="frame" x="150" y="116" width="13" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="148._Headphones_copy_6" translatesAutoresizingMaskIntoConstraints="NO" id="T0Y-Cl-6ZX">
+                                <rect key="frame" x="124" y="113" width="18" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="علم الفيزياء" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="8hR-Sf-3ui">
+                                <rect key="frame" x="8" y="20" width="215" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fJA-l6-OIk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidArabicKufi-Bold" family="Droid Arabic Kufi" pointSize="13"/>
+                                <color key="textColor" red="0.050980392159999999" green="0.32549019610000002" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34X-w7-L4d">
+                                <rect key="frame" x="8" y="22" width="50" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="BTq-E4-9OZ"/>
+                                    <constraint firstAttribute="width" constant="50" id="bQu-oE-cRW"/>
+                                </constraints>
+                                <state key="normal" image="More_Icon"/>
+                                <connections>
+                                    <action selector="moreTapped:" destination="8a8-kI-zS0" eventType="touchUpInside" id="n6H-iv-fxa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8hR-Sf-3ui" firstAttribute="top" secondItem="Bc6-Hz-ECg" secondAttribute="top" id="31B-oh-ixw"/>
+                            <constraint firstItem="Bc6-Hz-ECg" firstAttribute="leading" secondItem="wpA-29-GVn" secondAttribute="trailing" constant="8" id="44W-Cq-ir4"/>
+                            <constraint firstAttribute="trailing" secondItem="Bc6-Hz-ECg" secondAttribute="trailing" constant="9" id="9Kg-r5-cvO"/>
+                            <constraint firstItem="Bc6-Hz-ECg" firstAttribute="leading" secondItem="2VT-WC-hrQ" secondAttribute="trailing" constant="8" id="CPj-Lc-yrf"/>
+                            <constraint firstItem="wpA-29-GVn" firstAttribute="centerY" secondItem="1lF-DR-WX5" secondAttribute="centerY" id="E7I-GV-Tun"/>
+                            <constraint firstItem="KAg-BW-xtG" firstAttribute="bottom" secondItem="Bc6-Hz-ECg" secondAttribute="bottom" id="Gaz-5v-3v6"/>
+                            <constraint firstItem="8hR-Sf-3ui" firstAttribute="leading" secondItem="1lF-DR-WX5" secondAttribute="leading" constant="8" id="HQc-KA-rDu"/>
+                            <constraint firstItem="Bc6-Hz-ECg" firstAttribute="leading" secondItem="8hR-Sf-3ui" secondAttribute="trailing" constant="8" id="PJ0-ES-txj"/>
+                            <constraint firstItem="Bc6-Hz-ECg" firstAttribute="centerY" secondItem="1lF-DR-WX5" secondAttribute="centerY" constant="1" id="TDY-XV-cho"/>
+                            <constraint firstItem="2VT-WC-hrQ" firstAttribute="leading" secondItem="KAg-BW-xtG" secondAttribute="trailing" constant="5" id="Vsz-Rm-wi4"/>
+                            <constraint firstItem="2VT-WC-hrQ" firstAttribute="bottom" secondItem="Bc6-Hz-ECg" secondAttribute="bottom" id="eTJ-r9-mgx"/>
+                            <constraint firstItem="34X-w7-L4d" firstAttribute="centerY" secondItem="1lF-DR-WX5" secondAttribute="centerY" id="ekG-Fl-pFk"/>
+                            <constraint firstItem="wpA-29-GVn" firstAttribute="leading" secondItem="1lF-DR-WX5" secondAttribute="leading" constant="8" id="k4a-5c-g7C"/>
+                            <constraint firstItem="34X-w7-L4d" firstAttribute="leading" secondItem="1lF-DR-WX5" secondAttribute="leading" constant="8" id="xjX-hB-3OU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1lF-DR-WX5" firstAttribute="centerX" secondItem="lrQ-3u-rTs" secondAttribute="centerX" id="82l-8S-6bK"/>
+                    <constraint firstItem="1lF-DR-WX5" firstAttribute="width" secondItem="lrQ-3u-rTs" secondAttribute="width" id="PXK-af-vEX"/>
+                    <constraint firstItem="1lF-DR-WX5" firstAttribute="centerY" secondItem="lrQ-3u-rTs" secondAttribute="centerY" id="nkW-TX-5MO"/>
+                    <constraint firstItem="1lF-DR-WX5" firstAttribute="height" secondItem="lrQ-3u-rTs" secondAttribute="height" id="una-Yb-9hE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgIcon" destination="Bc6-Hz-ECg" id="PQF-bG-Nz4"/>
+                <outlet property="lblAuthor" destination="wpA-29-GVn" id="mtA-OS-Bqc"/>
+                <outlet property="lblListens" destination="4x1-96-2u4" id="L6h-Tv-pqv"/>
+                <outlet property="lblName" destination="8hR-Sf-3ui" id="K6y-gB-XNS"/>
+                <outlet property="lblPages" destination="2VT-WC-hrQ" id="kwx-oV-SoV"/>
+                <outlet property="slideContentView" destination="1lF-DR-WX5" id="hap-le-BXn"/>
+            </connections>
+            <point key="canvasLocation" x="143" y="30"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="148._Headphones_copy_6" width="17" height="16"/>
+        <image name="More_Icon" width="25" height="7"/>
+        <image name="open" width="375" height="667"/>
+        <image name="text_file" width="13" height="17"/>
+    </resources>
+</document>

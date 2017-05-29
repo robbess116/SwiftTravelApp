@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwiftCountryView" customModule="MRCountryPicker" customModuleProvider="target">
+            <connections>
+                <outlet property="countryCodeLabel" destination="f3C-bM-CyA" id="uBi-Gy-aai"/>
+                <outlet property="countryNameLabel" destination="dia-wo-OOX" id="BKq-Gf-6FZ"/>
+                <outlet property="flagImageView" destination="KFd-mf-a6Z" id="KV7-i5-7NN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KFd-mf-a6Z">
+                    <rect key="frame" x="278" y="15" width="20" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="40h-QN-Ub5"/>
+                        <constraint firstAttribute="height" constant="15" id="hTA-ed-4jS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+386" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3C-bM-CyA">
+                    <rect key="frame" x="212" y="12" width="66" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="XLG-ig-Obp"/>
+                        <constraint firstAttribute="width" constant="66" id="nIf-7k-lJm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="Slovenia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dia-wo-OOX">
+                    <rect key="frame" x="63" y="12" width="64" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KFd-mf-a6Z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Q46-wW-OaC"/>
+                <constraint firstItem="KFd-mf-a6Z" firstAttribute="leading" secondItem="f3C-bM-CyA" secondAttribute="trailing" id="QWV-Cr-bv5"/>
+                <constraint firstAttribute="trailing" secondItem="KFd-mf-a6Z" secondAttribute="trailing" constant="22" id="bn4-84-L80"/>
+                <constraint firstItem="f3C-bM-CyA" firstAttribute="centerY" secondItem="KFd-mf-a6Z" secondAttribute="centerY" id="cwI-S4-JQq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="161" y="220"/>
+        </view>
+    </objects>
+</document>
